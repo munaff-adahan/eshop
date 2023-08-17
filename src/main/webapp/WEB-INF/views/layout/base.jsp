@@ -16,7 +16,7 @@
   <meta name="author" content="D-THEMES">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/icons/favicon.png">
+  <link rel="icon" type="image/png" href=${BASE_URL}"assets/images/icons/favicon.png">
 
   <!-- WebFont.js -->
   <script>
@@ -31,24 +31,24 @@
     })(document);
   </script>
 
-  <link rel="preload" href="assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="${BASE_URL}assets/vendor/fontawesome-free/webfonts/fa-regular-400.woff2" as="font" type="font/woff2"
         crossorigin="anonymous">
-  <link rel="preload" href="assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="${BASE_URL}assets/vendor/fontawesome-free/webfonts/fa-solid-900.woff2" as="font" type="font/woff2"
         crossorigin="anonymous">
-  <link rel="preload" href="assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="${BASE_URL}assets/vendor/fontawesome-free/webfonts/fa-brands-400.woff2" as="font" type="font/woff2"
         crossorigin="anonymous">
-  <link rel="preload" href="assets/fonts/wolmart.woff?png09e" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="${BASE_URL}assets/fonts/wolmart.woff?png09e" as="font" type="font/woff" crossorigin="anonymous">
 
   <!-- Vendor CSS -->
-  <link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="${BASE_URL}assets/vendor/fontawesome-free/css/all.min.css">
 
   <!-- Plugins CSS -->
-  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css">
+  <link rel="stylesheet" href="${BASE_URL}assets/vendor/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="${BASE_URL}assets/vendor/animate/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="${BASE_URL}assets/vendor/magnific-popup/magnific-popup.min.css">
 
   <!-- Default CSS -->
-  <link rel="stylesheet" type="text/css" href="assets/css/demo2.min.css">
+  <link rel="stylesheet" type="text/css" href="${BASE_URL}assets/css/demo2.min.css">
 </head>
 
 <body class="home">
@@ -66,195 +66,10 @@
 </layout:block>
   <%--layout --%>
 
-  <!-- Start of Footer -->
-  <footer class="footer appear-animate" data-animation-options="{
-            'name': 'fadeIn'
-        }">
-    <div class="footer-newsletter bg-primary pt-6 pb-6">
-      <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-xl-5 col-lg-6">
-            <div class="icon-box icon-box-side text-white">
-              <div class="icon-box-icon d-inline-flex">
-                <i class="w-icon-envelop3"></i>
-              </div>
-              <div class="icon-box-content">
-                <h4 class="icon-box-title text-white text-uppercase mb-0">Subscribe To Our
-                  Newsletter</h4>
-                <p class="text-white">Get all the latest information on Events, Sales and Offers.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-7 col-lg-6 col-md-9 mt-4 mt-lg-0 ">
-            <form action="#" method="get"
-                  class="input-wrapper input-wrapper-inline input-wrapper-rounded">
-              <input type="email" class="form-control mr-2 bg-white" name="email" id="email"
-                     placeholder="Your E-mail Address" />
-              <button class="btn btn-dark btn-rounded" type="submit">Subscribe<i
-                      class="w-icon-long-arrow-right"></i></button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="footer-top">
-        <div class="row">
-          <div class="col-lg-4 col-sm-6">
-            <div class="widget widget-about">
-              <a href="demo2.html" class="logo-footer">
-                <img src="assets/images/demos/demo2/footer-logo.png" alt="logo-footer" width="144"
-                     height="45" />
-              </a>
-              <div class="widget-body">
-                <p class="widget-about-title">Got Question? Call us 24/7</p>
-                <a href="tel:18005707777" class="widget-about-call">1-800-570-7777</a>
-                <p class="widget-about-desc">Register now to get updates on pronot get up icons
-                  & coupons ster now toon.
-                </p>
+<%--footer layout--%>
+<jsp:include page="../frontend/include/footer.jsp"/>
+  <%--footer layout--%>
 
-                <div class="social-icons social-icons-colored">
-                  <a href="#" class="social-icon social-facebook w-icon-facebook"></a>
-                  <a href="#" class="social-icon social-twitter w-icon-twitter"></a>
-                  <a href="#" class="social-icon social-instagram w-icon-instagram"></a>
-                  <a href="#" class="social-icon social-youtube w-icon-youtube"></a>
-                  <a href="#" class="social-icon social-pinterest w-icon-pinterest"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="widget">
-              <h3 class="widget-title">Company</h3>
-              <ul class="widget-body">
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="#">Team Member</a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-                <li><a href="#">Affilate</a></li>
-                <li><a href="#">Order History</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="widget">
-              <h4 class="widget-title">My Account</h4>
-              <ul class="widget-body">
-                <li><a href="#">Track My Order</a></li>
-                <li><a href="cart.html">View Cart</a></li>
-                <li><a href="login.html">Sign In</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="wishlist.html">My Wishlist</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-6">
-            <div class="widget">
-              <h4 class="widget-title">Customer Service</h4>
-              <ul class="widget-body">
-                <li><a href="#">Payment Methods</a></li>
-                <li><a href="#">Money-back guarantee!</a></li>
-                <li><a href="#">Product Returns</a></li>
-                <li><a href="#">Support Center</a></li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Term and Conditions</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-middle">
-        <div class="widget widget-category">
-          <div class="category-box">
-            <h6 class="category-name">Consumer Electric:</h6>
-            <a href="#">TV Television</a>
-            <a href="#">Air Condition</a>
-            <a href="#">Refrigerator</a>
-            <a href="#">Washing Machine</a>
-            <a href="#">Audio Speaker</a>
-            <a href="#">Security Camera</a>
-            <a href="#">View All</a>
-          </div>
-          <div class="category-box">
-            <h6 class="category-name">Clothing & Apparel:</h6>
-            <a href="#">Men's T-shirt</a>
-            <a href="#">Dresses</a>
-            <a href="#">Men's Sneacker</a>
-            <a href="#">Leather Backpack</a>
-            <a href="#">Watches</a>
-            <a href="#">Jeans</a>
-            <a href="#">Sunglasses</a>
-            <a href="#">Boots</a>
-            <a href="#">Rayban</a>
-            <a href="#">Acccessories</a>
-          </div>
-          <div class="category-box">
-            <h6 class="category-name">Home, Garden & Kitchen:</h6>
-            <a href="#">Sofa</a>
-            <a href="#">Chair</a>
-            <a href="#">Bed Room</a>
-            <a href="#">Living Room</a>
-            <a href="#">Cookware</a>
-            <a href="#">Utensil</a>
-            <a href="#">Blender</a>
-            <a href="#">Garden Equipments</a>
-            <a href="#">Decor</a>
-            <a href="#">Library</a>
-          </div>
-          <div class="category-box">
-            <h6 class="category-name">Health & Beauty:</h6>
-            <a href="#">Skin Care</a>
-            <a href="#">Body Shower</a>
-            <a href="#">Makeup</a>
-            <a href="#">Hair Care</a>
-            <a href="#">Lipstick</a>
-            <a href="#">Perfume</a>
-            <a href="#">View all</a>
-          </div>
-          <div class="category-box">
-            <h6 class="category-name">Jewelry & Watches:</h6>
-            <a href="#">Necklace</a>
-            <a href="#">Pendant</a>
-            <a href="#">Diamond Ring</a>
-            <a href="#">Silver Earing</a>
-            <a href="#">Leather Watcher</a>
-            <a href="#">Rolex</a>
-            <a href="#">Gucci</a>
-            <a href="#">Australian Opal</a>
-            <a href="#">Ammolite</a>
-            <a href="#">Sun Pyrite</a>
-          </div>
-          <div class="category-box">
-            <h6 class="category-name">Computer & Technologies:</h6>
-            <a href="#">Laptop</a>
-            <a href="#">iMac</a>
-            <a href="#">Smartphone</a>
-            <a href="#">Tablet</a>
-            <a href="#">Apple</a>
-            <a href="#">Asus</a>
-            <a href="#">Drone</a>
-            <a href="#">Wireless Speaker</a>
-            <a href="#">Game Controller</a>
-            <a href="#">View all</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="footer-left">
-          <p class="copyright">Copyright © 2021 Wolmart Store. All Rights Reserved.</p>
-        </div>
-        <div class="footer-right">
-          <span class="payment-label mr-lg-8">We're using safe payment for</span>
-          <figure class="payment">
-            <img src="assets/images/payment.png" alt="payment" width="159" height="25" />
-          </figure>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- End of Footer -->
 </div>
 <!-- End of .page-wrapper -->
 
@@ -292,7 +107,7 @@
           </div>
           <figure class="product-media">
             <a href="product-default.html">
-              <img src="assets/images/cart/product-1.jpg" alt="product" height="84" width="94" />
+              <img src="${BASE_URL}assets/images/cart/product-1.jpg" alt="product" height="84" width="94" />
             </a>
           </figure>
           <button class="btn btn-link btn-close" aria-label="button">
@@ -313,7 +128,7 @@
           </div>
           <figure class="product-media">
             <a href="product-default.html">
-              <img src="assets/images/cart/product-2.jpg" alt="product" width="84" height="94" />
+              <img src="${BASE_URL}assets/images/cart/product-2.jpg" alt="product" width="84" height="94" />
             </a>
           </figure>
           <button class="btn btn-link btn-close" aria-label="button">
@@ -853,28 +668,28 @@
           <div class="swiper-wrapper row cols-1 gutter-no">
             <div class="swiper-slide">
               <figure class="product-image">
-                <img src="assets/images/products/popup/1-440x494.jpg"
+                <img src="${BASE_URL}assets/images/products/popup/1-440x494.jpg"
                      data-zoom-image="assets/images/products/popup/1-800x900.jpg"
                      alt="Water Boil Black Utensil" width="800" height="900">
               </figure>
             </div>
             <div class="swiper-slide">
               <figure class="product-image">
-                <img src="assets/images/products/popup/2-440x494.jpg"
+                <img src="${BASE_URL}assets/images/products/popup/2-440x494.jpg"
                      data-zoom-image="assets/images/products/popup/2-800x900.jpg"
                      alt="Water Boil Black Utensil" width="800" height="900">
               </figure>
             </div>
             <div class="swiper-slide">
               <figure class="product-image">
-                <img src="assets/images/products/popup/3-440x494.jpg"
+                <img src="${BASE_URL}assets/images/products/popup/3-440x494.jpg"
                      data-zoom-image="assets/images/products/popup/3-800x900.jpg"
                      alt="Water Boil Black Utensil" width="800" height="900">
               </figure>
             </div>
             <div class="swiper-slide">
               <figure class="product-image">
-                <img src="assets/images/products/popup/4-440x494.jpg"
+                <img src="${BASE_URL}assets/images/products/popup/4-440x494.jpg"
                      data-zoom-image="assets/images/products/popup/4-800x900.jpg"
                      alt="Water Boil Black Utensil" width="800" height="900">
               </figure>
@@ -891,19 +706,19 @@
                     }">
           <div class="product-thumbs swiper-wrapper row cols-4 gutter-sm">
             <div class="product-thumb swiper-slide">
-              <img src="assets/images/products/popup/1-103x116.jpg" alt="Product Thumb" width="103"
+              <img src="${BASE_URL}assets/images/products/popup/1-103x116.jpg" alt="Product Thumb" width="103"
                    height="116">
             </div>
             <div class="product-thumb swiper-slide">
-              <img src="assets/images/products/popup/2-103x116.jpg" alt="Product Thumb" width="103"
+              <img src="${BASE_URL}assets/images/products/popup/2-103x116.jpg" alt="Product Thumb" width="103"
                    height="116">
             </div>
             <div class="product-thumb swiper-slide">
-              <img src="assets/images/products/popup/3-103x116.jpg" alt="Product Thumb" width="103"
+              <img src="${BASE_URL}assets/images/products/popup/3-103x116.jpg" alt="Product Thumb" width="103"
                    height="116">
             </div>
             <div class="product-thumb swiper-slide">
-              <img src="assets/images/products/popup/4-103x116.jpg" alt="Product Thumb" width="103"
+              <img src="${BASE_URL}assets/images/products/popup/4-103x116.jpg" alt="Product Thumb" width="103"
                    height="116">
             </div>
           </div>
@@ -917,7 +732,7 @@
         <h2 class="product-title">Electronics Black Wrist Watch</h2>
         <div class="product-bm-wrapper">
           <figure class="brand">
-            <img src="assets/images/products/brand/brand-1.jpg" alt="Brand" width="102" height="48" />
+            <img src="${BASE_URL}assets/images/products/brand/brand-1.jpg" alt="Brand" width="102" height="48" />
           </figure>
           <div class="product-meta">
             <div class="product-categories">
@@ -1015,17 +830,17 @@
 <!-- End of Quick view -->
 
 <!-- Plugin JS File -->
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-<script src="assets/vendor/jquery.plugin/jquery.plugin.min.js"></script>
-<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/jquery.countdown/jquery.countdown.min.js"></script>
-<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="assets/vendor/floating-parallax/parallax.min.js"></script>
-<script src="assets/vendor/zoom/jquery.zoom.js"></script>
+<script src="${BASE_URL}assets/vendor/jquery/jquery.min.js"></script>
+<script src="${BASE_URL}assets/vendor/jquery.plugin/jquery.plugin.min.js"></script>
+<script src="${BASE_URL}assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="${BASE_URL}assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="${BASE_URL}assets/vendor/jquery.countdown/jquery.countdown.min.js"></script>
+<script src="${BASE_URL}assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="${BASE_URL}assets/vendor/floating-parallax/parallax.min.js"></script>
+<script src="${BASE_URL}assets/vendor/zoom/jquery.zoom.js"></script>
 
 <!-- Main Js -->
-<script src="assets/js/main.min.js"></script>
+<script src="${BASE_URL}assets/js/main.min.js"></script>
 </body>
 
 </html>
