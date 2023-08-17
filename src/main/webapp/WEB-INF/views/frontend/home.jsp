@@ -1,6 +1,6 @@
-<%@ taglib uri="http://kwonnam.pe.kr/jsp/template-inheritance" prefix="layout"%>
+<%@ taglib uri="http://callidora.lk/jsp/template-inheritance" prefix="layout"%>
 <layout:extends name="base">
- <layout:put block="content">
+ <layout:put block="contents" type="REPLACE">
      <!-- start of Main -->
      <main class="main">
          <div class="intro-section">
