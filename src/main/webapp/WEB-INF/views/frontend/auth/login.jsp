@@ -118,8 +118,8 @@
             document.getElementsByClassName('sign-up').item(0).addEventListener('click',function () {
                 let email = document.getElementById('email_1').value;
                 let password = document.getElementById('password_1').value;
-
-                fetch(${BASE_URL}'login',{
+                console.log(email);
+                fetch('${BASE_URL}register',{
                     method:'post',
                     headers:{'Content-Type':'application/json'
                     },
@@ -127,7 +127,8 @@
                         email : email,
                         password : password,
                     })
-                })
+                }).then(response => response.text()).then();
+                    // .then(response => response.text()).then();
             });
 
         </script>

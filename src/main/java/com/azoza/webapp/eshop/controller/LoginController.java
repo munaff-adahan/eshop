@@ -10,6 +10,7 @@ import org.glassfish.jersey.server.mvc.Viewable;
 public class LoginController {
     @GET
     public Viewable index(){
+
         return new Viewable("/frontend/auth/login");
     }
 
