@@ -1,6 +1,10 @@
 <%@ taglib uri="http://callidora.lk/jsp/template-inheritance" prefix="layout"%>
 <layout:extends name="base">
- <layout:put block="contents" type="REPLACE">
+    <layout:put block="style" type="REPLACE">
+        <link rel="stylesheet" type="text/css" href="${BASE_URL}assets/css/demo2.min.css">
+    </layout:put>
+ <layout:put block="contents">
+
      <!-- start of Main -->
      <main class="main">
          <div class="intro-section">
